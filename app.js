@@ -355,7 +355,8 @@ app.delete('/cart/product/delete',async(req,res)=>{
         }
         //findIndex() searches for the product in cart
         const productIndex = cart.products.findIndex(
-            (product) => product._id.toString() === productID
+            (product) => 
+            product._id.toString() === productID
         );
         
         if(productIndex === -1){
